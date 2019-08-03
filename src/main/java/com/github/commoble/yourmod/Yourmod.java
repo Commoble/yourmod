@@ -6,4 +6,6 @@ import net.minecraftforge.fml.common.Mod;
 public class YourMod
 {
 	public static final String MODID = "yourmod";
+	
+	public static final String EXPLODIUM_NAME = "explodium";
 }
