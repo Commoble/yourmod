@@ -18,8 +18,10 @@ public class ExplodiumBlock extends Block
 	 * Called after a player destroys this Block - the posiiton pos may no longer
 	 * hold the state indicated.
 	 */
+	@Override
 	public void onPlayerDestroy(IWorld worldIn, BlockPos pos, BlockState state)
 	{
+		super.onPlayerDestroy(worldIn, pos, state);
 		if (worldIn instanceof World)
 		{
 			((World)worldIn).createExplosion(null,
